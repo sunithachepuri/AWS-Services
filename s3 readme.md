@@ -3,7 +3,6 @@
 
 
 
-
 # **1. created a bucket using cli**
 
 ```sh
