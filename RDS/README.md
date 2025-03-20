@@ -1,6 +1,8 @@
-RDS OVERVIWE & USAGE GUIDE 
-  ##Amazon RDS - Relational Database Service
-What is Amazon RDS?
+RDS OVERVIEW & USAGE GUIDE 
+
+    ##Amazon RDS - Relational Database Service
+  
+      What is Amazon RDS?
 Amazon RDS is a fully managed relational database service that simplifies database operations, maintenance, and scaling.
 
 Advantages of RDS
