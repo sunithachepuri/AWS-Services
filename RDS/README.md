@@ -99,6 +99,28 @@
     --skip-final-snapshot
 
 ### RDS Configuration Using Python (BOTO3)
+``sh
+  import boto3
+
+# Initialize the RDS client
+rds_client = boto3.client("rds", region_name="us-east-1")
+
+# Create RDS Instance
+response = rds_client.create_db_instance(
+    DBInstanceIdentifier="my-rds-instance",
+    AllocatedStorage=20,  # Storage in GB
+    DBInstanceClass="db.t3.micro",  # Free-tier eligible
+    Engine="mysql",  # Change to "postgres", "mariadb", etc.
+    MasterUsername="admin",
+    MasterUserPassword="YourStrongPassword123!",  # Use a strong password
+    BackupRetentionPeriod=7,  # Keep backups for 7 days
+    PubliclyAccessible=True,  # Set to False if private
+)
+
+print("RDS Instance Creation Started!")
+print(response)
+``
+
 
 
      
