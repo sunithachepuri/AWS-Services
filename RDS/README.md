@@ -40,7 +40,7 @@
 
      <img width="1143" alt="1" src="https://github.com/user-attachments/assets/3faf596c-9472-4e76-8452-7c648f2ea898" />
 
-     Connect Using MySQL Workbench
+  2. Connect Using MySQL Workbench
      
      Open MySQL Workbench.
      
@@ -54,9 +54,10 @@
      Password: Sunitha17
      Click Test Connection → If successful, click OK.
      
+     <img width="1406" alt="2" src="https://github.com/user-attachments/assets/a3270d61-da70-4f6c-a4d4-c6ab02bbf1ac" />
 
 
-  3. 
+
 
 
 
