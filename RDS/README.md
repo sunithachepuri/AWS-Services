@@ -47,11 +47,17 @@
      Click + to add a new connection.
 
      Set up connection details:
+     
      Connection Name: AWS RDS MySQL
+     
      Hostname: mydb-instance.123456789012.us-east-1.rds.amazonaws.com
+     
      Port: 3306
+     
      Username: admin
+     
      Password: Sunitha17
+     
      Click Test Connection → If successful, click OK.
      
      <img width="1406" alt="2" src="https://github.com/user-attachments/assets/a3270d61-da70-4f6c-a4d4-c6ab02bbf1ac" />
