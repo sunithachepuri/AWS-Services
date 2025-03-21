@@ -3,8 +3,8 @@
   ## What is Amazon RDS?
   Amazon RDS is a fully managed relational database service that simplifies database operations, maintenance, and scaling.
 
-Advantages of RDS
-Managed Database: AWS handles backups, scaling, security, and maintenance.
+  ## Advantages of RDS
+     # Managed Database: AWS handles backups, scaling, security, and maintenance.
 
 High Availability: Supports Multi-AZ deployments.
 
