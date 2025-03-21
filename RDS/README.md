@@ -6,7 +6,7 @@
   ## Advantages of RDS
   Managed Database: AWS handles backups, scaling, security, and maintenance.
   
-  High Availability: Supports Multi-AZ deployments.
+  # High Availability: Supports Multi-AZ deployments.
   
   Automatic Backups: Enables daily backups and snapshots.
 
