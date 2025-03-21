@@ -33,5 +33,7 @@
   ### RDS Configuration using AWS CONSOLE
   
   1. Create an RDS Instance
+<img width="1143" alt="1" src="https://github.com/user-attachments/assets/3faf596c-9472-4e76-8452-7c648f2ea898" />
+
 
 
