@@ -63,9 +63,9 @@
      
      <img width="1406" alt="2" src="https://github.com/user-attachments/assets/a3270d61-da70-4f6c-a4d4-c6ab02bbf1ac" />
 
-  ### RDS Configuration Using AWS CLI
-
-   1. Ensure AWS CLI is installed and configured:
+### RDS Configuration Using AWS CLI
+   
+  1. Ensure AWS CLI is installed and configured:
   
    Provide:
    AWS Access Key,
@@ -74,7 +74,7 @@
 
    <img width="574" alt="Screenshot 2025-03-20 at 11 02 04 PM" src="https://github.com/user-attachments/assets/6dcb70ad-1d1a-4f37-aee7-8e8b3c21a59c" />
    
-   2. Create RDS Instance
+  2. Create RDS Instance
       
    Run the following command to create a MySQL RDS instance:
    
@@ -86,7 +86,13 @@
 
   4. Use this endpoint to connect via MySQL Workbench or CLI.
 
-         aws rds describe-db-instances --query "DBInstances[*].mydb-cli.c6dwqukgy354.us-east-1.rds.amazonaws.com"
+    aws rds describe-db-instances --query "DBInstances[*].mydb-cli.c6dwqukgy354.us-east 1.rds.amazonaws.com"
+
+  5. Delete RDS Instance
+
+    aws rds delete-db-instance \
+    --db-instance-identifier mydb-cli \
+    --skip-final-snapshot
 
      
 
