@@ -65,7 +65,7 @@
 
   ### RDS Configuration Using AWS CLI
 
-  1.Ensure AWS CLI is installed and configured:
+     1. Ensure AWS CLI is installed and configured:
   
   Provide:
   AWS Access Key
