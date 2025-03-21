@@ -4,6 +4,7 @@
   Amazon RDS is a fully managed relational database service that simplifies database operations, maintenance, and scaling.
 
   ### Advantages of RDS
+  
   Managed Database: AWS handles backups, scaling, security, and maintenance.
   
   High Availability: Supports Multi-AZ deployments.
@@ -61,6 +62,21 @@
      Click Test Connection → If successful, click OK.
      
      <img width="1406" alt="2" src="https://github.com/user-attachments/assets/a3270d61-da70-4f6c-a4d4-c6ab02bbf1ac" />
+
+  ### RDS Configuration Using AWS CLI
+
+  1.Ensure AWS CLI is installed and configured:
+  
+  Provide:
+  AWS Access Key
+  AWS Secret Key
+  Default region (e.g., us-east-1)
+
+  <img width="574" alt="Screenshot 2025-03-20 at 11 02 04 PM" src="https://github.com/user-attachments/assets/d87312b2-c239-4917-8b4c-5b8860f03591" />
+
+
+
+  
 
 
 
