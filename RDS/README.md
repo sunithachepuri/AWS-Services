@@ -99,7 +99,8 @@
     --skip-final-snapshot
 
 ### RDS Configuration Using Python (BOTO3)
-``sh
+
+``python
   import boto3
 
 # Initialize the RDS client
@@ -119,6 +120,7 @@ response = rds_client.create_db_instance(
 
 print("RDS Instance Creation Started!")
 print(response)
+
 ``
 
 
