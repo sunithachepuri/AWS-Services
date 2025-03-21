@@ -5,18 +5,20 @@
 
   ## Advantages of RDS
   Managed Database: AWS handles backups, scaling, security, and maintenance.
+  
   High Availability: Supports Multi-AZ deployments.
+  
+  Automatic Backups: Enables daily backups and snapshots.
 
-Automatic Backups: Enables daily backups and snapshots.
+  Scalability: Easily scale storage and compute resources.
 
-Scalability: Easily scale storage and compute resources.
+  Security: Supports IAM roles, encryption, and VPC isolation.
 
-Security: Supports IAM roles, encryption, and VPC isolation.
+  ##Common Use Cases
+  
+  Web Applications: Use RDS as the backend database for high-performance, scalable applications.
 
-Common Use Cases
-Web Applications: Use RDS as the backend database for high-performance, scalable applications.
-
-Data Warehousing: Store structured data for reporting and analytics with tools like Tableau, Power BI, and AWS Redshift.
+  Data Warehousing: Store structured data for reporting and analytics with tools like Tableau, Power BI, and AWS Redshift.
 
 ETL Pipelines: Serve as an intermediate storage layer for extracting, transforming, and loading (ETL) data.
 
