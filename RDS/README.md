@@ -30,8 +30,8 @@
 
   Hybrid Cloud Integration: Extend on-premises databases into the cloud for scalability and reliability.
 
-  ### RDS Configuration using AWS CLI
+  ### RDS Configuration using AWS CONSOLE
   
-  1. Create an RDS Instance
+  # 1. Create an RDS Instance
 
 
