@@ -33,7 +33,30 @@
   ### RDS Configuration using AWS CONSOLE
   
   1. Create an RDS Instance
-<img width="1143" alt="1" src="https://github.com/user-attachments/assets/3faf596c-9472-4e76-8452-7c648f2ea898" />
+
+     Create a standard database by choosing MySQL as a database engine and set up a username: admin, password: sunitha17
+
+     Configure VPC connectivity with port number 3306 in inbound rule then AWS starts creating RDS instance
+
+     <img width="1143" alt="1" src="https://github.com/user-attachments/assets/3faf596c-9472-4e76-8452-7c648f2ea898" />
+
+     Connect Using MySQL Workbench
+     
+     Open MySQL Workbench.
+     
+     Click + to add a new connection.
+
+     Set up connection details:
+     Connection Name: AWS RDS MySQL
+     Hostname: mydb-instance.123456789012.us-east-1.rds.amazonaws.com
+     Port: 3306
+     Username: admin
+     Password: Sunitha17
+     Click Test Connection → If successful, click OK.
+     
+
+
+  3. 
 
 
 
