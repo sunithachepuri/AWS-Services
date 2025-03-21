@@ -87,7 +87,7 @@
     aws rds describe-db-instances --query "DBInstances[*].[DBInstanceIdentifier,DBInstanceStatus]"
     
 
-  4. Use this endpoint to connect via MySQL Workbench or CLI.
+  4. Use this endpoint to connect via MySQL Workbench.
 
     aws rds describe-db-instances --query "DBInstances[*].mydb-cli.c6dwqukgy354.us-east 1.rds.amazonaws.com"
     
