@@ -73,26 +73,33 @@
    Default region (e.g., us-east-1)
 
    <img width="574" alt="Screenshot 2025-03-20 at 11 02 04 PM" src="https://github.com/user-attachments/assets/6dcb70ad-1d1a-4f37-aee7-8e8b3c21a59c" />
+
    
   2. Create RDS Instance
       
    Run the following command to create a MySQL RDS instance:
    
    <img width="576" alt="Screenshot 2025-03-20 at 11 11 38 PM" src="https://github.com/user-attachments/assets/f56f5075-d2b6-45af-b789-ffa10ffa2496" />
+   
 
    3. Run this to check the instance status:
 
     aws rds describe-db-instances --query "DBInstances[*].[DBInstanceIdentifier,DBInstanceStatus]"
+    
 
   4. Use this endpoint to connect via MySQL Workbench or CLI.
 
     aws rds describe-db-instances --query "DBInstances[*].mydb-cli.c6dwqukgy354.us-east 1.rds.amazonaws.com"
+    
 
   5. Delete RDS Instance
 
     aws rds delete-db-instance \
     --db-instance-identifier mydb-cli \
     --skip-final-snapshot
+
+### RDS Configuration Using Python (BOTO3)
+
 
      
 
