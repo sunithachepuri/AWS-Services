@@ -65,14 +65,14 @@
 
   ### RDS Configuration Using AWS CLI
 
-     1. Ensure AWS CLI is installed and configured:
+   1. Ensure AWS CLI is installed and configured:
   
-  Provide:
-  AWS Access Key
-  AWS Secret Key
-  Default region (e.g., us-east-1)
+   Provide:
+   AWS Access Key,
+   AWS Secret Key,
+   Default region (e.g., us-east-1)
 
-  <img width="574" alt="Screenshot 2025-03-20 at 11 02 04 PM" src="https://github.com/user-attachments/assets/d87312b2-c239-4917-8b4c-5b8860f03591" />
+   <img width="574" alt="Screenshot 2025-03-20 at 11 02 04 PM" src="https://github.com/user-attachments/assets/d87312b2-c239-4917-8b4c- 5b8860f03591" />
 
 
 
