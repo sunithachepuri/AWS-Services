@@ -1,5 +1,5 @@
 
-### What is AWS SNS?
+# What is AWS SNS?
 AWS Simple Notification Service (SNS) is a fully managed messaging service that allows you to send notifications or messages to multiple subscribers using various communication channels.
 
 ## Key Features of SNS
