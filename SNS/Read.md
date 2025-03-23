@@ -3,11 +3,13 @@
 AWS Simple Notification Service (SNS) is a fully managed messaging service that allows you to send notifications or messages to multiple subscribers using various communication channels.
 
 ### Key Features of SNS
-✅ Publish-Subscribe Model → One-to-many messaging system
-✅ Multiple Protocols Supported → Email, SMS, HTTP, AWS Lambda, SQS
-✅ Event-Driven → Works well with AWS services like S3, EC2, Lambda
-✅ Scalable & Serverless → Automatically handles high traffic
-✅ FIFO Topics → Ensures message ordering and deduplication (for SQS)
+ Publish-Subscribe Model → One-to-many messaging system
+ 
+ Multiple Protocols Supported → Email, SMS, HTTP, AWS Lambda, SQS
+ 
+ Event-Driven → Works well with AWS services like S3, EC2, Lambda
+ Scalable & Serverless → Automatically handles high traffic
+ FIFO Topics → Ensures message ordering and deduplication (for SQS)
 
 ### How AWS SNS Works
 1️⃣ Publisher sends a message to an SNS Topic.
