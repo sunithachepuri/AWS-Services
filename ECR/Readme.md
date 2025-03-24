@@ -71,7 +71,7 @@ docker push 221082201013.dkr.ecr.us-east-1.amazonaws.com/my-ecr-repo-cli:latest
 
 Run the Docker image locally
 
-docker run hello-world
+`docker run hello-world`
 
 <img width="601" alt="Screenshot 2025-03-24 at 11 06 00 AM" src="https://github.com/user-attachments/assets/92c4e397-8ab0-449b-bbaf-3c18986c2177" />
 
