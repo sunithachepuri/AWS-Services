@@ -117,6 +117,9 @@ Publish SMS to the subscribers
 Verify SMS delivery
 
     aws sns get-sms-attributes
+
+
+ ## AWS   
        
 
       
