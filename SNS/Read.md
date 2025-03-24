@@ -50,7 +50,7 @@ Only supports AWS SQS as a subscriber
 
 Use case: Financial transactions, inventory management
 
-Create SNS by AWS Console
+## Create SNS by AWS Console
 
 <img width="1072" alt="Screenshot 2025-03-23 at 7 14 43 PM" src="https://github.com/user-attachments/assets/b434c14e-990f-410d-a5a4-9795c9439372" />
 
