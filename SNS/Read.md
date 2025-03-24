@@ -71,7 +71,7 @@ Chcek you inbox!
 ![IMG_1777](https://github.com/user-attachments/assets/04bcd900-9892-4a00-9ba2-be1a11c04f67)
 
 
-## Create using AWS CLI
+## Create SNS using AWS CLI
 
 Install AWS CLI and congiure AWS CLI 
 
@@ -118,9 +118,20 @@ Verify SMS delivery
 
     aws sns get-sms-attributes
 
+ ## SNS by using Python Boto3 
 
- ## AWS   
+ Install Boto3 lib using pip
+
+       pip install boto3
+
+Configure AWS CLI with the credentials
+
+    aws configure
+
+Write a python script to create an SNS topic 
+
        
+
 
       
 
