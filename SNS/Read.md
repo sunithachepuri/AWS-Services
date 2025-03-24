@@ -128,7 +128,86 @@ Configure AWS CLI with the credentials
 
     aws configure
 
-Write a python script to create an SNS topic 
+Write a python script to create an SNS topic and run script 
+        
+    python create_sns.py
+
+
+    import boto3
+
+    # Create an SNS client
+    sns = boto3.client("sns", region_name="us-east-1")  # Change region if needed
+
+    # Define a topic name
+    topic_name = "sns_by_python"
+
+    # Create the SNS topic
+    response = sns.create_topic(Name=topic_name)
+
+    # Get the topic ARN
+    topic_arn = response["TopicArn"]
+    print(f"SNS Topic Created: {topic_arn}")
+
+
+Create another python script for subscription to the topic and run 
+
+    python subscribe_sns.py
+
+
+    import boto3
+
+    # Create an SNS client
+    sns = boto3.client("sns", region_name="us-east-1")
+
+    # Replace with the ARN of your SNS topic
+    topic_arn = "arn:aws:sns:us-east-1:221082201013:sns_by_python"  # Change this
+
+    # Replace with the email or phone number you want to subscribe
+    protocol = "email"  # Change to "sms" for phone numbers
+    endpoint = "schepuri2@govst.edu"  
+
+    # Subscribe to the topic
+          response = sns.subscribe(
+          TopicArn=topic_arn,
+          Protocol=protocol,
+          Endpoint=endpoint
+    )
+
+    # Print the subscription ARN
+    print("Subscription ARN:", response["SubscriptionArn"])
+
+Create a python script to publish a message and run the script 
+
+    python publish_message.py
+
+
+    import boto3
+
+    # Create an SNS client
+    sns = boto3.client("sns", region_name="us-east-1")
+
+    # Replace with your SNS topic ARN
+    topic_arn = "arn:aws:sns:us-east-1:221082201013:sns_by_python"
+
+    # Message to send
+    message = "Hello, this is a test message from AWS SNS!"
+
+    # Publish the message
+        response = sns.publish(
+        TopicArn=topic_arn,
+        Message=message
+    )
+
+    # Print message ID
+    print("Message sent! Message ID:", response["MessageId"])
+
+    
+ 
+
+    
+
+    
+
 
        
 
