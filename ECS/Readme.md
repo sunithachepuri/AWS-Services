@@ -38,18 +38,20 @@ IAM roles
    
 A running instance of a task definition.
 
-5. Services
+4. Services
    
 Ensures the desired number of tasks are running, supports auto-scaling, and integrates with Elastic Load Balancer (ELB).
 
-7. Container Agent
+5. Container Agent
    
 Runs on EC2 instances and manages communication with ECS.
 
-9. Load Balancing
+6. Load Balancing
     
 Uses ALB/NLB for distributing traffic to ECS tasks:
 
 Application Load Balancer (ALB): Handles HTTP/HTTPS traffic with advanced routing.
+
 Network Load Balancer (NLB): Manages TCP/UDP traffic for high performance and low latency.
+
 Classic Load Balancer (CLB): Legacy load balancer.
