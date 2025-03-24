@@ -84,8 +84,11 @@ Install AWS CLI and congiure AWS CLI
 You'll be prompted to enter:
 
 AWS Access Key ID:
+
 AWS Secret Access Key:
+
 Default region (e.g., us-east-1):
+
 Output format (json, table, or text): 
 
 Create SNS topic via CLI
