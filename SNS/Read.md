@@ -20,24 +20,37 @@ subscribers using various communication channels.
 
 ### How AWS SNS Works
 
-1️⃣ Publisher sends a message to an SNS Topic.
+ Publisher sends a message to an SNS Topic.
 
-2️⃣ SNS Topic distributes the message to all subscribers.
+ SNS Topic distributes the message to all subscribers.
 
-3️⃣ Subscribers (Email, SMS, HTTP, SQS, Lambda) receive the message.
+ Subscribers (Email, SMS, HTTP, SQS, Lambda) receive the message.
 
 📌 Example: You create an SNS topic and subscribe your email to it. When a message is published, AWS SNS sends an email notification to your inbox.
 
-4️⃣ Types of SNS Topics
-1️⃣ Standard Topic (default)
+### Types of SNS Topics
+
+#### Standard Topic (default)
 
 High throughput, best-effort delivery
+
 Messages may be delivered out of order
+
 Supports all subscribers (Email, SMS, HTTP, Lambda, SQS)
+
 Use case: General notifications (e.g., system alerts, user notifications)
-2️⃣ FIFO (First-In-First-Out) Topic
+
+### FIFO (First-In-First-Out) Topic
 
 Message order is guaranteed
+
 Exactly-once delivery
+
 Only supports AWS SQS as a subscriber
+
 Use case: Financial transactions, inventory management
+
+Create SNS by AWS Console
+
+<img width="1072" alt="Screenshot 2025-03-23 at 7 14 43 PM" src="https://github.com/user-attachments/assets/b434c14e-990f-410d-a5a4-9795c9439372" />
+
