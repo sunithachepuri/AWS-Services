@@ -54,3 +54,34 @@ Create SNS by AWS Console
 
 <img width="1072" alt="Screenshot 2025-03-23 at 7 14 43 PM" src="https://github.com/user-attachments/assets/b434c14e-990f-410d-a5a4-9795c9439372" />
 
+Create Subscription to the SNS Topic 
+
+<img width="1428" alt="Screenshot 2025-03-23 at 7 20 12 PM" src="https://github.com/user-attachments/assets/56b336ae-a3ad-440d-b489-b5dcde6b9cb2" />
+
+Once created you will recieve a confirmation lik via email 
+
+
+![IMG_1778](https://github.com/user-attachments/assets/10765ab4-648a-4015-b7a2-1bebc0091b9e)
+
+
+
+
+After Confirming go to AWS SNS service and publish a message 
+
+
+<img width="1416" alt="Screenshot 2025-03-23 at 7 18 01 PM" src="https://github.com/user-attachments/assets/01031a7a-7454-41cf-b700-cc15d4362643" />
+
+
+
+Chcek you inbox!
+
+
+![IMG_1777](https://github.com/user-attachments/assets/04bcd900-9892-4a00-9ba2-be1a11c04f67)
+
+
+
+
+
+
+
+
