@@ -201,6 +201,9 @@ Create a python script to publish a message and run the script
     # Print message ID
     print("Message sent! Message ID:", response["MessageId"])
 
+    <img width="1390" alt="Screenshot 2025-03-23 at 9 00 53 PM" src="https://github.com/user-attachments/assets/238127cc-5add-4d76-8745-3752b8ca2632" />
+
+
     
  
 
