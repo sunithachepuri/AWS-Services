@@ -90,6 +90,131 @@ docker run hello-world
 
 ### Create ECR by python Boto3
 
+build a sample Docker image, and push it to ECR
+
+Installing all the dependencies 
+
+```sh
+pip install boto3
+pip install awscli
+```
+Install docker
+
+```sh
+brew install --cask docker
+```
+Set up AWS credentials
+
+```sh
+aws configure
+```
+Create a python script and run the script 
+
+```sh
+python create_ecr.py
+```
+
+```sh
+import boto3
+
+# Create ECR client
+ecr_client = boto3.client("ecr", region_name="us-east-1")  # Change region if needed
+
+repository_name = "my-sample-repo"
+
+try:
+    response = ecr_client.create_repository(repositoryName=repository_name)
+    repository_uri = response["repository"]["repositoryUri"]
+    print(f"Repository Created: {repository_uri}")
+except ecr_client.exceptions.RepositoryAlreadyExistsException:
+    print(f"Repository '{repository_name}' already exists.")
+```
+
+Now authenticate Docker to ECR
+
+```sh
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 221082201013.dkr.ecr.us-east-1.amazonaws.com
+```
+
+<img width="1440" alt="Screenshot 2025-03-24 at 3 58 03 PM" src="https://github.com/user-attachments/assets/baf73c81-d497-4b2e-861f-26dfcdf6951e" />
+
+create a my-smaple-app directory and a dockerfile inside the directory for the project and navigate into it.
+
+```sh
+# Use Python base image
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy the application file to the container
+COPY app.py .
+
+# Define the command to run the application
+CMD ["python", "app.py"]
+```
+
+This docker file uses a lightweight Python image (python:3.9-slim) as the base.
+
+Sets /app as the working directory.
+
+Copies app.py into the container.
+
+Runs app.py when the container starts.
+
+Create the app.py file in the same directory and add the following simple Python script:
+
+```sh
+print("Hello from Docker!")
+```
+
+<img width="836" alt="Screenshot 2025-03-24 at 3 56 53 PM" src="https://github.com/user-attachments/assets/a83302a0-a20d-4ca9-ab13-d8d101b17a67" />
+
+build the docker image 
+
+```sh
+docker build -t my-sample-image .
+```
+
+Verify docker images 
+
+```sh
+docker images
+```
+
+<img width="837" alt="Screenshot 2025-03-24 at 3 35 21 PM" src="https://github.com/user-attachments/assets/effd29fb-21ec-4f9d-8ae0-b2584842134c" />
+
+Tag the docker image
+
+```sh
+docker tag my-sample-image:latest 221082201013.dkr.ecr.us-east-1.amazonaws.com/my-sample-repo:latest
+```
+
+Push the docker image to ECR 
+
+```sh
+docker push 221082201013.dkr.ecr.us-east-1.amazonaws.com/my-sample-repo:latest
+```
+To pull and run the image
+
+```sh
+docker pull 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-sample-repo:latest
+docker run --rm 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-sample-repo:latest
+```
+
+Now, the Docker image is stored in AWS ECR and can be used in your CI/CD pipelines or Kubernetes clusters.
+
+
+<img width="830" alt="Screenshot 2025-03-24 at 3 44 19 PM" src="https://github.com/user-attachments/assets/8bcad23a-e086-4e6c-8f52-5c75a645df7f" />
+
+<img width="1082" alt="Screenshot 2025-03-24 at 4 06 49 PM" src="https://github.com/user-attachments/assets/dbaa8400-7c58-4460-9184-faf3c0b7ca12" />
+
+
+
+
+
+
+
 
                
 
