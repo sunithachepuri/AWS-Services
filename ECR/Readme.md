@@ -44,9 +44,38 @@ Configure AWS CLI with you credentials
 
 aws configure
 
-aws ecr create-repository --repository-name my-hello-world-repository --region us-east-1
+Create a ECR repository named my-ecr-repo-cli
 
-                
+aws ecr create-repository --repository-name my-ecr-repo-cli --region us-east-1
+
+<img width="1431" alt="Screenshot 2025-03-24 at 10 54 40 AM" src="https://github.com/user-attachments/assets/b62563be-1053-4f87-a353-86bb5e9b779d" />
+
+Authenticate Docker to the registry to push and pull images from Amazon ECR
+
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 221082201013.dkr.ecr.us-east-1.amazonaws.com
+
+Pull the hello-world Docker image from Docker Hub
+
+docker pull hello-world
+
+Tag the hello-world Docker image to prepare it for pushing to your ECR repository
+
+docker tag hello-world:latest 221082201013.dkr.ecr.us-east-1.amazonaws.com/my-ecr-repo-cli:latest
+
+Push the tagged hello-world image to your ECR repository
+
+docker push 221082201013.dkr.ecr.us-east-1.amazonaws.com/my-ecr-repo-cli:latest
+
+<img width="595" alt="Screenshot 2025-03-24 at 11 05 52 AM" src="https://github.com/user-attachments/assets/389b05dc-c05f-41a0-b503-ee9ccdc5da8b" />
+
+
+Run the Docker image locally
+
+docker run hello-world
+
+<img width="601" alt="Screenshot 2025-03-24 at 11 06 00 AM" src="https://github.com/user-attachments/assets/92c4e397-8ab0-449b-bbaf-3c18986c2177" />
+
+               
 
 
 
